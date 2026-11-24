@@ -1,0 +1,116 @@
+{
+  "lines": [
+    {
+      "source": "oauth2-client",
+      "text": "java.lang.NoSuchFieldException: handshaker"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "\tat io.undertow.protocols.ssl.ALPNHackSSLEngine.<clinit>(ALPNHackSSLEngine.java:79)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "\tat io.undertow.protocols.alpn.ALPNManager.getProvider(ALPNManager.java:71)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "\tat io.undertow.server.protocol.http.AlpnOpenListener$1.apply(AlpnOpenListener.java:239)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "\tat io.undertow.server.protocol.http.AlpnOpenListener$SSLConduitUpdater.apply(AlpnOpenListener.java:421)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "\tat io.undertow.protocols.alpn.ALPNManager.registerEngineCallback(ALPNManager.java:80)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "\tat io.undertow.server.protocol.http.AlpnOpenListener.handleEvent(AlpnOpenListener.java:67)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "\tat org.xnio.ChannelListeners$10.handleEvent(ChannelListeners.java:291)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "\tat org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "\tat org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "\tat org.xnio.nio.WorkerThread.safeRun(WorkerThread.java:612)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:33.498 [XNIO-1 I/O-8]   DEBUG io.undertow.request apply - Using ALPN provider JDK9AlpnProvider for connector at /172.19.0.8:6884"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:34.324 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg DEBUG c.n.openapi.ApiNormalisedPath <init> - normalised = /oauth2/client"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:34.336 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg DEBUG c.n.openapi.ApiNormalisedPath <init> - normalised = /oauth2/client"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:34.491 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg INFO  com.networknt.config.Config getConfigStream - Unable to load config from externalized folder for mask.yml in /config"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:34.500 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg INFO  com.networknt.config.Config getConfigStream - Config loaded from default folder for mask.yml"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:34.539 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg DEBUG c.n.openapi.ApiNormalisedPath <init> - normalised = /oauth2/client"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:34.847 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg DEBUG com.networknt.schema.TypeValidator debug - validate( {\"clientSecret\":\"dyAj\",\"clientType\":\"public\",\"clientProfile\":\"mobile\",\"clientName\":\"YAz_a\",\"clientDesc\":\"DT8vLF_\",\"ownerId\":\"vhXiH54Jor\",\"host\":\"AHfcRBZC\",\"scope\":\"a59rtNNQD\",\"customClaim\":\"_9uGCM6_jbvAln\",\"redirectUri\":\"W5m\",\"derefClientId\":\"Zblf6tc8U_OfxKp\"}, {\"clientSecret\":\"dyAj\",\"clientType\":\"public\",\"clientProfile\":\"mobile\",\"clientName\":\"YAz_a\",\"clientDesc\":\"DT8vLF_\",\"ownerId\":\"vhXiH54Jor\",\"host\":\"AHfcRBZC\",\"scope\":\"a59rtNNQD\",\"customClaim\":\"_9uGCM6_jbvAln\",\"redirectUri\":\"W5m\",\"derefClientId\":\"Zblf6tc8U_OfxKp\"}, requestBody)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:34.850 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg DEBUG c.n.schema.PropertiesValidator debug - validate( {\"clientSecret\":\"dyAj\",\"clientType\":\"public\",\"clientProfile\":\"mobile\",\"clientName\":\"YAz_a\",\"clientDesc\":\"DT8vLF_\",\"ownerId\":\"vhXiH54Jor\",\"host\":\"AHfcRBZC\",\"scope\":\"a59rtNNQD\",\"customClaim\":\"_9uGCM6_jbvAln\",\"redirectUri\":\"W5m\",\"derefClientId\":\"Zblf6tc8U_OfxKp\"}, {\"clientSecret\":\"dyAj\",\"clientType\":\"public\",\"clientProfile\":\"mobile\",\"clientName\":\"YAz_a\",\"clientDesc\":\"DT8vLF_\",\"ownerId\":\"vhXiH54Jor\",\"host\":\"AHfcRBZC\",\"scope\":\"a59rtNNQD\",\"customClaim\":\"_9uGCM6_jbvAln\",\"redirectUri\":\"W5m\",\"derefClientId\":\"Zblf6tc8U_OfxKp\"}, requestBody)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:34.857 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg DEBUG com.networknt.schema.TypeValidator debug - validate( \"Zblf6tc8U_OfxKp\", {\"clientSecret\":\"dyAj\",\"clientType\":\"public\",\"clientProfile\":\"mobile\",\"clientName\":\"YAz_a\",\"clientDesc\":\"DT8vLF_\",\"ownerId\":\"vhXiH54Jor\",\"host\":\"AHfcRBZC\",\"scope\":\"a59rtNNQD\",\"customClaim\":\"_9uGCM6_jbvAln\",\"redirectUri\":\"W5m\",\"derefClientId\":\"Zblf6tc8U_OfxKp\"}, requestBody.derefClientId)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:34.859 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg DEBUG c.networknt.schema.RequiredValidator debug - validate( {\"clientSecret\":\"dyAj\",\"clientType\":\"public\",\"clientProfile\":\"mobile\",\"clientName\":\"YAz_a\",\"clientDesc\":\"DT8vLF_\",\"ownerId\":\"vhXiH54Jor\",\"host\":\"AHfcRBZC\",\"scope\":\"a59rtNNQD\",\"customClaim\":\"_9uGCM6_jbvAln\",\"redirectUri\":\"W5m\",\"derefClientId\":\"Zblf6tc8U_OfxKp\"}, {\"clientSecret\":\"dyAj\",\"clientType\":\"public\",\"clientProfile\":\"mobile\",\"clientName\":\"YAz_a\",\"clientDesc\":\"DT8vLF_\",\"ownerId\":\"vhXiH54Jor\",\"host\":\"AHfcRBZC\",\"scope\":\"a59rtNNQD\",\"customClaim\":\"_9uGCM6_jbvAln\",\"redirectUri\":\"W5m\",\"derefClientId\":\"Zblf6tc8U_OfxKp\"}, requestBody)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:34.863 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg DEBUG com.networknt.schema.EnumValidator debug - validate( \"public\", {\"clientSecret\":\"dyAj\",\"clientType\":\"public\",\"clientProfile\":\"mobile\",\"clientName\":\"YAz_a\",\"clientDesc\":\"DT8vLF_\",\"ownerId\":\"vhXiH54Jor\",\"host\":\"AHfcRBZC\",\"scope\":\"a59rtNNQD\",\"customClaim\":\"_9uGCM6_jbvAln\",\"redirectUri\":\"W5m\",\"derefClientId\":\"Zblf6tc8U_OfxKp\"}, requestBody.clientType)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:34.865 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg DEBUG com.networknt.schema.EnumValidator debug - validate( \"mobile\", {\"clientSecret\":\"dyAj\",\"clientType\":\"public\",\"clientProfile\":\"mobile\",\"clientName\":\"YAz_a\",\"clientDesc\":\"DT8vLF_\",\"ownerId\":\"vhXiH54Jor\",\"host\":\"AHfcRBZC\",\"scope\":\"a59rtNNQD\",\"customClaim\":\"_9uGCM6_jbvAln\",\"redirectUri\":\"W5m\",\"derefClientId\":\"Zblf6tc8U_OfxKp\"}, requestBody.clientProfile)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:34.869 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg DEBUG com.networknt.schema.TypeValidator debug - validate( \"_9uGCM6_jbvAln\", {\"clientSecret\":\"dyAj\",\"clientType\":\"public\",\"clientProfile\":\"mobile\",\"clientName\":\"YAz_a\",\"clientDesc\":\"DT8vLF_\",\"ownerId\":\"vhXiH54Jor\",\"host\":\"AHfcRBZC\",\"scope\":\"a59rtNNQD\",\"customClaim\":\"_9uGCM6_jbvAln\",\"redirectUri\":\"W5m\",\"derefClientId\":\"Zblf6tc8U_OfxKp\"}, requestBody.customClaim)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:34.872 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg DEBUG com.networknt.schema.TypeValidator debug - validate( \"dyAj\", {\"clientSecret\":\"dyAj\",\"clientType\":\"public\",\"clientProfile\":\"mobile\",\"clientName\":\"YAz_a\",\"clientDesc\":\"DT8vLF_\",\"ownerId\":\"vhXiH54Jor\",\"host\":\"AHfcRBZC\",\"scope\":\"a59rtNNQD\",\"customClaim\":\"_9uGCM6_jbvAln\",\"redirectUri\":\"W5m\",\"derefClientId\":\"Zblf6tc8U_OfxKp\"}, requestBody.clientSecret)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:34.874 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg DEBUG c.networknt.schema.RequiredValidator debug - validate( {\"clientSecret\":\"dyAj\",\"clientType\":\"public\",\"clientProfile\":\"mobile\",\"clientName\":\"YAz_a\",\"clientDesc\":\"DT8vLF_\",\"ownerId\":\"vhXiH54Jor\",\"host\":\"AHfcRBZC\",\"scope\":\"a59rtNNQD\",\"customClaim\":\"_9uGCM6_jbvAln\",\"redirectUri\":\"W5m\",\"derefClientId\":\"Zblf6tc8U_OfxKp\"}, {\"clientSecret\":\"dyAj\",\"clientType\":\"public\",\"clientProfile\":\"mobile\",\"clientName\":\"YAz_a\",\"clientDesc\":\"DT8vLF_\",\"ownerId\":\"vhXiH54Jor\",\"host\":\"AHfcRBZC\",\"scope\":\"a59rtNNQD\",\"customClaim\":\"_9uGCM6_jbvAln\",\"redirectUri\":\"W5m\",\"derefClientId\":\"Zblf6tc8U_OfxKp\"}, requestBody)"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:35.003 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg INFO  com.networknt.config.Config getConfigStream - Unable to load config from externalized folder for status.yml in /config"
+    },
+    {
+      "source": "oauth2-client",
+      "text": "11:28:35.008 [XNIO-1 task-1]  X9DS5dE-TXas1V0YZg-nmg INFO  com.networknt.config.Config getConfigStream - Config loaded from default folder for status.yml"
+    }
+  ]
+}

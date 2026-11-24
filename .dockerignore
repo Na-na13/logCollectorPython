@@ -1,6 +1,7 @@
 .git
 .gitignore
 .dockerignore
+parser-api
 README.md
 __pycache__
 *.pyc
