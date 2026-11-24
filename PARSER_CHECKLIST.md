@@ -112,14 +112,14 @@ This is the most important part (PS §8). Write it as plain Python, so it can be
 
 ## Phase 3: Flask layer (`parser/server.py`)
 
-- [ ] Create `app = Flask(__name__)` and one shared `TemplateStore`.
-- [ ] `GET /health` returns `{"status": "ok"}` with `200`.
+- [x] Create `app = Flask(__name__)` and one shared `TemplateStore`.
+- [x] `GET /health` returns `{"status": "ok"}` with `200`.
 - [ ] `POST /parse`:
-  - [ ] Read the body with `request.get_json(silent=True)`. If the result is `None`, return `400` with `{"error": "invalid JSON"}`.
-  - [ ] Validate **the whole request first**, before touching Drain (PS §7):
-    - [ ] `lines` exists and is a list,
-    - [ ] every entry has a non-empty string `source` and a string `text`.
-    - [ ] Error messages name the position, e.g. `lines[3]: 'source' must be a non-empty string`.
+  - [x] Read the body with `request.get_json(silent=True)`. If the result is `None`, return `400` with `{"error": "invalid JSON"}`.
+  - [x] Validate **the whole request first**, before touching Drain (PS §7):
+    - [x] `lines` exists and is a list,
+    - [x] every entry has a non-empty string `source` and a string `text`.
+    - [x] Error messages name the position, e.g. `lines[3]: 'source' must be a non-empty string`.
   - [ ] Only then call `store.parse_lines(body["lines"])` and return `{"templates": [...]}` with `200`.
 - [ ] Optionally add `POST /reset`, calling the store's reset (see Phase 2). EvoMaster never calls it.
 - [ ] Add **JSON error handlers**, because Flask's default error pages are HTML:
