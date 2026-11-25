@@ -120,20 +120,20 @@ This is the most important part (PS §8). Write it as plain Python, so it can be
     - [x] `lines` exists and is a list,
     - [x] every entry has a non-empty string `source` and a string `text`.
     - [x] Error messages name the position, e.g. `lines[3]: 'source' must be a non-empty string`.
-  - [ ] Only then call `store.parse_lines(body["lines"])` and return `{"templates": [...]}` with `200`.
+  - [x] Only then call `store.parse_lines(body["lines"])` and return `{"templates": [...]}` with `200`.
 - [ ] Optionally add `POST /reset`, calling the store's reset (see Phase 2). EvoMaster never calls it.
-- [ ] Add **JSON error handlers**, because Flask's default error pages are HTML:
-  - [ ] one handler for HTTP errors (`werkzeug.exceptions.HTTPException`, which covers 400, 404 and 405), returning `{"error": e.description}` with `e.code`,
-  - [ ] one handler for unexpected exceptions, returning `500` with `{"error": str(e)}` and logging the stack trace.
-- [ ] Make error messages self-explanatory. The error body is the only diagnostic EvoMaster users see (PS §7).
+- [x] Add **JSON error handlers**, because Flask's default error pages are HTML:
+  - [x] one handler for HTTP errors (`werkzeug.exceptions.HTTPException`, which covers 400, 404 and 405), returning `{"error": e.description}` with `e.code`,
+  - [x] one handler for unexpected exceptions, returning `500` with `{"error": str(e)}` and logging the stack trace.
+- [x] Make error messages self-explanatory. The error body is the only diagnostic EvoMaster users see (PS §7).
 - [ ] Replace the debug `print`s with `logging` (PS §11).
 - [ ] Write tests with Flask's test client (`app.test_client()`), so no server is needed (PS §14, rows 11–16):
   - **Required:**
-    - [ ] `/health` and `/parse` return the status codes and JSON shapes in `parser-openapi.json`.
-    - [ ] Invalid JSON, a missing `lines`, and a bad entry each return `400` with a JSON `error` naming the problem.
-    - [ ] A `400` leaves the Drain state unchanged (follow it with a valid call and check the ids).
-    - [ ] Unknown fields in the request are ignored (PS §5).
-    - [ ] `404` and `405` return JSON, not HTML.
+    - [x] `/health` and `/parse` return the status codes and JSON shapes in `parser-openapi.json`.
+    - [x] Invalid JSON, a missing `lines`, and a bad entry each return `400` with a JSON `error` naming the problem.
+    - [x] A `400` leaves the Drain state unchanged (follow it with a valid call and check the ids).
+    - [x] Unknown fields in the request are ignored (PS §5).
+    - [x] `404` and `405` return JSON, not HTML.
   - **Good to have:**
     - [ ] Non-ASCII text survives the round trip.
     - [ ] A large request (e.g. 5 000 lines) succeeds.
